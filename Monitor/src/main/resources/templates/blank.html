@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<html xmlns="http://www.thymeleaf.org">
+<head>
+     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>风机报警信息显示界面</title>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLE CSS -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- GOOGLE FONT CSS -->
+     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css' />
+
+</head>
+<body>
+     <section class="sec-logo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <h3>风机报警信息</h3>
+                </div>
+                <div class="col-md-7">
+                </div>
+                <div class="col-md-3 quick-info">
+                  Support :<i>shuangmm@gmail.com</i> <br />
+                    Call : <i>18604020689</i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--LOGO SECTION END-->
+     <section class="sec-menu" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+              <span class="menu-open-icon">  <i class="fa fa-bars pull-left fa-2x b-clr"   ></i> </span>  <i class="pull-right">欢迎进入监控模块 </i>
+                </div>
+            </div>
+        </div>
+    </section>
+       <div id="side-menu"  >
+
+           
+    </div>
+    <!--MENU SECTION END-->
+     <div class="content-wrapper">
+         <div class="container">
+        <div class="row pad-botm">
+            <div class="col-md-12">
+                <h4 class="header-line">报警信息显示</h4>
+            </div>
+
+        </div>
+             <div class="row">
+            <div class="col-md-12">
+               <div class="alert alert-success">
+                   <table border="2" align="center">
+                       <tr>
+                           <td>序号</td>
+                           <td>风机编号</td>
+                           <td>报警时间</td>
+                           <td>30s内温度高于80度次数</td>
+                       </tr>
+                       <tr th:each ="i:${info}">
+                           <td th:text = "${i.id}"></td>
+                           <td th:text = "${i.fan_no}"></td>
+                           <td th:text = "${i.call_time}"></td>
+                           <td th:text = "${i.call_count}"></td>
+                       </tr>
+                   </table>
+               </div>
+            </div>
+
+        </div>  
+    </div>
+    </div>
+     <!-- CONTENT-WRAPPER SECTION END-->
+    <section class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                   
+                </div>
+
+            </div>
+        </div>
+    </section>
+      <!-- FOOTER SECTION END-->
+
+    
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <script src="assets/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="assets/js/bootstrap.js"></script>
+     <!-- CUSTOM SCRIPTS  -->
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

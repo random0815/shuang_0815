@@ -1,0 +1,109 @@
+﻿
+
+
+
+
+/*======================================
+    GENERAL STYLES
+======================================= */
+
+.b-clr {
+    color:#000;
+}
+.quick-info {
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+
+.sec-logo {
+    padding-top:15px;
+    padding-bottom:10px;
+}
+.sec-menu {
+    background-color:#3AB056;
+    padding-top:20px;
+    padding-bottom:15px;
+    color:#fff;
+    font-size:22px;
+}
+.header-line {
+    font-weight:900;
+    padding-bottom:25px;
+    padding-top:30px;
+    border-bottom:1px solid #eeeeee;
+    text-transform:uppercase;
+}
+.pad-botm {
+    padding-bottom:15px;
+}
+.content-wrapper {
+    min-height:1000px;
+}
+.copyrights{
+	text-indent:-9999px;
+	height:0;
+	line-height:0;
+	font-size:0;
+	overflow:hidden;
+}
+/* =============================================================
+   SIDE MENU STYLES
+ ============================================================ */
+
+#side-menu {
+    height: 100%;
+    position: fixed;
+      left: -250px;
+    background-color: #3AB056;
+    color: #fff;
+    z-index: 999;
+    overflow: auto;
+    max-width: 500px;
+    overflow:auto;
+}
+
+    #side-menu ul {
+        list-style: none;
+        padding: 0px;
+    }
+
+        #side-menu ul li {
+            border-bottom: 1px solid #3BA551;
+            padding: 20px 25px;
+        }
+
+            #side-menu ul li a i {
+                padding-right: 10px;
+            }
+
+            #side-menu ul li a, #side-menu ul li a:hover {
+                color: #fff;
+                text-decoration: none;
+                font-size: 16px;
+            }
+
+.menu-close-icon, .menu-open-icon {
+    cursor: pointer;
+}
+
+/*======================================
+    DASHBOARD STYLES
+======================================= */
+
+
+
+/* =============================================================
+   FOOTER SECTION STYLES
+ ============================================================ */
+.footer-section {
+    padding:25px 50px 25px 50px;
+    color:#000;
+    font-size:13px;
+      text-align:right;
+       border-top:5px solid #000;
+
+}
+
+    .footer-section a, .footer-section a:hover {
+        color:#000;
+    }
